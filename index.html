@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navigaiont start -->
+<section class="navSection">
+    <nav>
+        <div class="logo"><h2>Ajay Verma</h2></div>
+        <ul>
+            <li> <a class="navlink" href="#home">Home</a></li>
+            <li> <a class="navlink" href="#Services">Services</a></li>
+            <li> <a class="navlink" href="#Gallary">Gallary</a></li>
+            <li> <a class="navlink" href="#about">About</a></li>
+            <li> <a class="navlink" href="#project">Project</a></li>
+            <li> <a class="navlink" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</section>    
+    <!-- navigation end -->
+<!-- content start -->
+<main id="about">
+        <div class="leftSide"> 
+            <p class="greet">Hello</p>           
+            <h2 class="Heading">Ajay Verma</h2>
+            <h4 class="sub-heading">Front End developer</h4>
+            <button type="button"><a href="#">Hire me</a></button>
+            <button type="button"><a href="#contact">Contact me</a></button>
+        </div>
+        <div class="rightSide">
+            <img src="./images/img1.jpg" alt="portfolio">
+        </div>
+    </div>
+</main>
+<section id = "Services">
+    <h2>Services</h2>
+    <div class="service-list">
+        <div class="card">
+            <div class="card-title">Web Development</div>
+            <img src="./images/mobile.png" alt="">
+        </div>
+        <div class="card">
+            <div class="card-title">Andriod App Development</div>
+            <img src="./images/android.png" alt="">
+        </div>
+        <div class="card">
+            <div class="card-title">IOS App Development</div>
+            <img src="./images/ios.jpg" alt="">
+        </div>
+        <div class="card">
+            <div class="card-title">Machine Learning</div>
+            <img src="./images/machine.png" alt="">
+        </div>
+    </div>
+</section>
+<!-- projec start -->
+<section id="project">
+    <h2>Project</h2>
+    <div class="project-list">
+        <div class="card">
+            <div class="card-title">To-Do list</div>
+            <img class="card-body" src="./images/checklist.png" alt="" >
+            <a target="_blank" href="./To-Do List/index.html" class="flip">
+                <p>See Project</p>
+            </a>
+        </div>
+        <div class="card">
+            <div class="card-title">Color Fliper</div>
+            <img class="card-body" src="./images/triangles.png" alt="">
+            <a target="_blank" href="./colorFlipers/index.html" class="flip">
+                <p>See Projects</p>
+            </a>
+        </div>
+        <div class="card">
+            <div class="card-title">Calander</div>
+            <img class="card-body" src="./images/calculator.jpg" alt="">
+            <a target="_blank" href="./calander/index.html" class="flip">
+               <p>See Projects</p> 
+            </a>
+        </div>
+        <div class="card">
+            <div class="card-title">Image Hoverlay Effect</div>
+            <img class="card-body" src="./images/youtube.png" alt="">
+            <a target="_blank" href="./image Hover Overlay Effect/index.html" class="flip">
+               <p>See Projects</p>
+            </a>
+        </div>
+</section>
+<!-- project end -->
+<!-- Gallry start -->
+<section id="Gallary">
+    <div class="slideshow-container">
+        <div class="mySlide fade">
+            <div class="numberText">1/6</div>
+            <img class = "images" src="./images/meeting-1453895_1280.png" alt="Ajay Verma">
+            <div class="text">Caption Text 1</div>
+        </div>
+        <div class="mySlide fade">
+            <div class="numberText">2/6</div>
+            <img class = "images" src="./images/mushrooms-1992408_1280.png" alt="">
+            <div class="text">Caption Text 2</div>
+        </div>
+        <div class="mySlide fade">
+            <div class="numberText">3/6</div>
+            <img class = "images" src="./images/couple-560783_1280.jpg" alt="">
+            <div class="text">Caption Text 3</div>
+        </div>        
+        <div class="mySlide fade">
+            <div class="numberText">4/6</div>
+            <img class = "images" src="./images/laptop-1512838_1280.png" alt="Ajay Verma">
+            <div class="text">Caption Text 4</div>
+        </div>
+        <div class="mySlide fade">
+            <div class="numberText">5/6</div>
+            <img class = "images" src="./images/mountains-1412683_1280.png" alt="">
+            <div class="text">Caption Text 5</div>
+        </div>
+        <div class="mySlide fade">
+            <div class="numberText">6/6</div>
+            <img class = "images" src="./images/forest-148727_1280.png" alt="">
+            <div class="text">Caption Text 6</div>
+        </div>
+         <a onclick="plusSlides(-1)" class="prev">&#10094;</a>
+        <a onclick="plusSlides(1)" class="next">&#10095;</a>
+    </div>    
+</section>
+<!-- Gallary end -->
+
+<!-- Contact start -->
+<section id="contact">
+    <h2>Contact</h2>
+<form method="GET" action="" id="frm">
+    <input type="text" placeholder="Your name" class="inputs">
+    <input type="email" placeholder="Your email" class="inputs">
+    <input type="text" placeholder="Your Number" class="inputs">
+    <button type="submit" onclick="Success()">Submit form</button>
+</form>
+</section>
+<!-- content end -->
+    <!-- footer start  -->
+    <footer>
+        <div>
+            <i class="fas fa-copyright">2021 Beginner. All Right Reserved.</i>
+        </div>
+        <div>
+            <a href="">Privacy Policy</a>
+        </div>
+        <div class="media-icon">
+            <a href=""><i class="fab fa-facebook" style="color: blue;"></i></a>
+            <a href=""><i class="fab fa-twitter-square" style="color: blue;"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+            <a href=""><i class="fab fa-google-plus"></i></a>
+            <a href=""><i class="fab fa-linkedin" style="color: blue;"></i></a>
+            <a href=""><i class="fab fa-instagram" ></i></a>
+        </div>    
+    </footer>
+    <!-- footer end  -->
+<script src="portfolio.js"></script>
+</body>
+</html>
