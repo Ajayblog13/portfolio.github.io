@@ -143,20 +143,21 @@ main .leftSide{
 button{
     padding: 1em;
     border: none;
-    /* color: white; */
+    color: white; 
     margin: 5px;
-    color: white;
-    background-color: rgba(0,0,0,.6);
+    /* color: white; */
+    background-color: rgba(50, 23, 201, 0.6);
     margin: 20px;
 }
 button a{
-    color: black;
+    color: white;
     font-weight: 900;
     text-decoration: none;
     font-size: 1.2em;
     text-transform: uppercase;
 }
 button:hover{
+    color: white;
     background-color: rgba(0,0,0,1);
 }
 .rightSide img{
@@ -167,7 +168,7 @@ button:hover{
     border-radius: 5em;
     /* background-color: teal; */  
 }
-#Services h2, #project h2, #contact h2{
+#Services h2, #project h2, #contact h2, #Gallary h2{
     position: relative;
     text-align: center;
     text-transform: uppercase;
@@ -236,7 +237,7 @@ form
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: .1em;
+    margin-top: .5em;
     background-color: teal;
     box-shadow: 1px 5px 10px rgb(70, 126, 120);
     border-radius: 1em;
@@ -290,6 +291,7 @@ footer{
 }
 .mySlide{
     display: none;
+    margin-top: 1em;
 }
 .prev, .next{
    cursor: pointer;
@@ -325,3 +327,9 @@ footer{
     width: 900px;
     height: 80vh;
 } 
+.fab:hover{
+    transition: 1s ease;
+    transform: scale(1.2);
+    /* background-color: #111;    */
+    /* padding: -.9em;  */
+}

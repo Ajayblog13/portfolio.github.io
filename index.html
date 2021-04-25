@@ -29,7 +29,7 @@
             <p class="greet">Hello</p>           
             <h2 class="Heading">Ajay Verma</h2>
             <h4 class="sub-heading">Front End developer</h4>
-            <button type="button"><a href="#">Hire me</a></button>
+            <button type="button"><a href="#home">Hire me</a></button>
             <button type="button"><a href="#contact">Contact me</a></button>
         </div>
         <div class="rightSide">
@@ -65,28 +65,28 @@
         <div class="card">
             <div class="card-title">To-Do list</div>
             <img class="card-body" src="./images/checklist.png" alt="" >
-            <a target="_blank" href="./To-Do List/index.html" class="flip">
+            <a target="_blank" href="./To-Do List/todo.html" class="flip">
                 <p>See Project</p>
             </a>
         </div>
         <div class="card">
             <div class="card-title">Color Fliper</div>
             <img class="card-body" src="./images/triangles.png" alt="">
-            <a target="_blank" href="./colorFlipers/index.html" class="flip">
+            <a target="_blank" href="./colorFlipers/ColorFlips.html" class="flip">
                 <p>See Projects</p>
             </a>
         </div>
         <div class="card">
             <div class="card-title">Calander</div>
             <img class="card-body" src="./images/calculator.jpg" alt="">
-            <a target="_blank" href="./calander/index.html" class="flip">
+            <a target="_blank" href="./calander/calenderPage.html" class="flip">
                <p>See Projects</p> 
             </a>
         </div>
         <div class="card">
             <div class="card-title">Image Hoverlay Effect</div>
             <img class="card-body" src="./images/youtube.png" alt="">
-            <a target="_blank" href="./image Hover Overlay Effect/index.html" class="flip">
+            <a target="_blank" href="./image Hover Overlay Effect/imageOverlay.html" class="flip">
                <p>See Projects</p>
             </a>
         </div>
@@ -94,36 +94,37 @@
 <!-- project end -->
 <!-- Gallry start -->
 <section id="Gallary">
+    <h2>Gallary</h2>
     <div class="slideshow-container">
         <div class="mySlide fade">
             <div class="numberText">1/6</div>
             <img class = "images" src="./images/meeting-1453895_1280.png" alt="Ajay Verma">
-            <div class="text">Caption Text 1</div>
+            <!-- <div class="text">Caption Text 1</div> -->
         </div>
         <div class="mySlide fade">
             <div class="numberText">2/6</div>
             <img class = "images" src="./images/mushrooms-1992408_1280.png" alt="">
-            <div class="text">Caption Text 2</div>
+            <!-- <div class="text">Caption Text 2</div> -->
         </div>
         <div class="mySlide fade">
             <div class="numberText">3/6</div>
             <img class = "images" src="./images/couple-560783_1280.jpg" alt="">
-            <div class="text">Caption Text 3</div>
+            <!-- <div class="text">Caption Text 3</div> -->
         </div>        
         <div class="mySlide fade">
             <div class="numberText">4/6</div>
             <img class = "images" src="./images/laptop-1512838_1280.png" alt="Ajay Verma">
-            <div class="text">Caption Text 4</div>
+            <!-- <div class="text">Caption Text 4</div> -->
         </div>
         <div class="mySlide fade">
             <div class="numberText">5/6</div>
             <img class = "images" src="./images/mountains-1412683_1280.png" alt="">
-            <div class="text">Caption Text 5</div>
+            <!-- <div class="text">Caption Text 5</div> -->
         </div>
         <div class="mySlide fade">
             <div class="numberText">6/6</div>
             <img class = "images" src="./images/forest-148727_1280.png" alt="">
-            <div class="text">Caption Text 6</div>
+            <!-- <div class="text">Caption Text 6</div> -->
         </div>
          <a onclick="plusSlides(-1)" class="prev">&#10094;</a>
         <a onclick="plusSlides(1)" class="next">&#10095;</a>
@@ -135,9 +136,9 @@
 <section id="contact">
     <h2>Contact</h2>
 <form method="GET" action="" id="frm">
-    <input type="text" placeholder="Your name" class="inputs">
-    <input type="email" placeholder="Your email" class="inputs">
-    <input type="text" placeholder="Your Number" class="inputs">
+    <input type="text" name="fullname" placeholder="Your name" class="inputs">
+    <input type="email" name="email" placeholder="Your email" class="inputs">
+    <input type="text" name="number" placeholder="Your Number" class="inputs">
     <button type="submit" onclick="Success()">Submit form</button>
 </form>
 </section>

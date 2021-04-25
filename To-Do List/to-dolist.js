@@ -70,7 +70,7 @@ if(window.localStorage.getItem("todos")== undefined){
          new item(inputValue.value);
          todos.push(inputValue.value);
          window.localStorage.setItem("todos", JSON.stringify(todos));
-         inputValue.value = ";"
+         inputValue.value = "";
      }
  }
  for(var v = 0; v < todos.length; v++){
