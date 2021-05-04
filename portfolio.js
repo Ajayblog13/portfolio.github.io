@@ -47,3 +47,9 @@ function Success(){
 //     slides[slideIndex-1].style.display = "block";
 //     setTimeout(showSlides, 3000);
 // }
+function toggleMenu(){
+    var toggle = document.querySelector('.toggle');
+    var navigation = document.querySelector('.navigation');
+    toggle.classList.toggle('active');
+    navigation.classList.toggle('active');
+}

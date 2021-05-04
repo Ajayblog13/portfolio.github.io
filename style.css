@@ -47,6 +47,9 @@ nav{
     flex-wrap: wrap;
     align-items: center;
 }
+.toggle{
+    display: none;
+}
 nav ul{
     list-style: none;
     display: flex;
@@ -82,22 +85,7 @@ nav ul li {
     color: red;
     text-decoration: none;
 }
-.navlink::before{
-    content:"";
-    position: absolute;
-    top: 39px;
-    width: 0em;
-    height: 1px;
-    border-bottom: 3px solid indigo;
-    transition: all 1s linear;
-   /* left: 0; */
-   /* width: 100%;
-   height: 100%;
-   overflow: hidden; */
-}
-.navlink:hover::before{
-    width: 3.5em;
-}
+
 main{
     width: 100%;
     margin-top: .5em;
@@ -332,4 +320,88 @@ footer{
     transform: scale(1.2);
     /* background-color: #111;    */
     /* padding: -.9em;  */
+}
+
+
+@media (max-width:992px)
+{
+    .navSection{
+        width:100%;
+    }
+}
+@media (max-width:480px){
+    .logo{
+        width: 90%;
+        margin: 0;
+        padding: 0;
+    }
+ main{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+ }
+main .leftSide{
+    width: 80%;
+}
+.rightSide img 
+{
+    width: 280px;
+    height: 250px;
+    margin-top: .2em;
+}
+.card{
+    width:100%;
+}
+.service-list, .project-list
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.images {
+    width: 358px;
+    height: 35vh;
+}
+.inputs {
+    width: 22em;
+}
+form {
+    width: 90%;
+    height: 270px;
+}
+nav ul{
+    list-style: none;
+    display: none;
+    overflow: hidden;
+}
+
+.toggle{ 
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: 2s ease-in-out;
+
+}
+nav ul.navigation.active 
+{   position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    z-index: 1000;
+}
+.media-icon{
+    width: 100%;
+    padding: 0;
+}
 }
