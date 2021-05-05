@@ -410,7 +410,7 @@ nav ul.navigation.active
     margin-left: 19em;
 }
 }
-@media (max-width:480px){
+@media only screen and (max-width:480px){
     body{
     overflow: hidden;
     }
@@ -487,5 +487,6 @@ nav ul.navigation.active
 .media-icon{
     width: 100%;
     padding: 0;
+    margin-left: 1em;
 }
 }
