@@ -330,28 +330,34 @@ footer{
         width:100%;
     }
 }
-@media (max-width:768px){
+@media only screen and (max-width:768px){
+    body{
+    overflow: hidden;
+    }
     .logo{
-        width: 95%;
+        width: 90%;
         margin: 0;
         padding: 0;
     }
     main {
-        width:95%;
+        width:100%;
     }
 main .leftSide{
     width: 50%;
+    overflow: hidden;
 }
 .greet::after{
         width: 5em;   
 }
 .rightSide img 
 {
-    width: 280px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
 }
 .card{
-    width:47%;
+    width:46%;
+    overflow: hidden;
+
 }
 .service-list, .project-list
 {
@@ -363,7 +369,7 @@ main .leftSide{
     height: 35vh;
 }
 .inputs {
-    width: 50em;
+    width: 45em;
     margin: .5em;
 }
 form {
@@ -405,6 +411,9 @@ nav ul.navigation.active
 }
 }
 @media (max-width:480px){
+    body{
+    overflow: hidden;
+    }
     .logo{
         width: 90%;
         margin: 0;
