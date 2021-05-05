@@ -3,6 +3,7 @@
     padding: 0em;
     box-sizing: border-box;
     font-family: 'Lucida Sans Unicode';
+    overflow-x: hidden;
 }
 body{
      background-color: rgba(144, 175, 165,.3); 
@@ -328,6 +329,80 @@ footer{
     .navSection{
         width:100%;
     }
+}
+@media (max-width:768px){
+    .logo{
+        width: 95%;
+        margin: 0;
+        padding: 0;
+    }
+    main {
+        width:95%;
+    }
+main .leftSide{
+    width: 50%;
+}
+.greet::after{
+        width: 5em;   
+}
+.rightSide img 
+{
+    width: 280px;
+    height: 250px;
+}
+.card{
+    width:47%;
+}
+.service-list, .project-list
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.images {
+    width: 768px;
+    height: 35vh;
+}
+.inputs {
+    width: 50em;
+    margin: .5em;
+}
+form {
+    width: 90%;
+    height: 270px;
+}
+nav ul{
+    list-style: none;
+    display: none;
+    overflow: hidden;
+}
+
+.toggle{ 
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: 2s ease-in-out;
+
+}
+nav ul.navigation.active 
+{   position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    z-index: 1000;
+}
+.media-icon{
+    width: 100%;
+    padding: 1em;
+    margin-left: 19em;
+}
 }
 @media (max-width:480px){
     .logo{
